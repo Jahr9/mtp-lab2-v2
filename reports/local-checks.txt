@@ -1,0 +1,68 @@
+Checked commit: e1bd0fe57f864597020154e7c5d2f36018f2fb67
+Python: 3.12.14
+
+$ python -m flake8 .
+Exit code: 0; no diagnostics.
+
+$ python -m unittest discover -s tests -t . -v
+test_both_algorithms_against_standard_library (tests.test_algorithms.GcdTests.test_both_algorithms_against_standard_library) ... ok
+test_euclid_large_consecutive_fibonacci (tests.test_algorithms.GcdTests.test_euclid_large_consecutive_fibonacci) ... ok
+test_non_integers_rejected (tests.test_algorithms.GcdTests.test_non_integers_rejected) ... ok
+test_regular_inputs (tests.test_algorithms.GcdTests.test_regular_inputs) ... ok
+test_signs_and_zeros (tests.test_algorithms.GcdTests.test_signs_and_zeros) ... ok
+test_against_closed_form (tests.test_algorithms.OddSumTests.test_against_closed_form) ... ok
+test_even_boundary (tests.test_algorithms.OddSumTests.test_even_boundary) ... ok
+test_negative_rejected (tests.test_algorithms.OddSumTests.test_negative_rejected) ... ok
+test_non_integer_rejected (tests.test_algorithms.OddSumTests.test_non_integer_rejected) ... ok
+test_odd_boundary_is_included (tests.test_algorithms.OddSumTests.test_odd_boundary_is_included) ... ok
+test_zero_and_one (tests.test_algorithms.OddSumTests.test_zero_and_one) ... ok
+test_empty_and_non_vowels (tests.test_algorithms.VowelTests.test_empty_and_non_vowels) ... ok
+test_english (tests.test_algorithms.VowelTests.test_english) ... ok
+test_non_string_rejected (tests.test_algorithms.VowelTests.test_non_string_rejected) ... ok
+test_repeated_vowels (tests.test_algorithms.VowelTests.test_repeated_vowels) ... ok
+test_russian (tests.test_algorithms.VowelTests.test_russian) ... ok
+test_uppercase_and_yo (tests.test_algorithms.VowelTests.test_uppercase_and_yo) ... ok
+test_commands (tests.test_cli.CliTests.test_commands) ... ok
+test_demo (tests.test_cli.CliTests.test_demo) ... ok
+test_invalid_input (tests.test_cli.CliTests.test_invalid_input) ... ok
+test_launch_from_another_directory (tests.test_cli.CliTests.test_launch_from_another_directory) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.961s
+
+OK
+
+$ python main.py
+Sum of odd numbers through 10: 25
+GCD by divisors (48, 18): 6
+GCD by Euclid (48, 18): 6
+Vowels in 'Hello, Python!': 3
+Vowels in 'Привет, мир!': 3
+
+Tests discovered from outside the repository with absolute -s and -t:
+test_both_algorithms_against_standard_library (tests.test_algorithms.GcdTests.test_both_algorithms_against_standard_library) ... ok
+test_euclid_large_consecutive_fibonacci (tests.test_algorithms.GcdTests.test_euclid_large_consecutive_fibonacci) ... ok
+test_non_integers_rejected (tests.test_algorithms.GcdTests.test_non_integers_rejected) ... ok
+test_regular_inputs (tests.test_algorithms.GcdTests.test_regular_inputs) ... ok
+test_signs_and_zeros (tests.test_algorithms.GcdTests.test_signs_and_zeros) ... ok
+test_against_closed_form (tests.test_algorithms.OddSumTests.test_against_closed_form) ... ok
+test_even_boundary (tests.test_algorithms.OddSumTests.test_even_boundary) ... ok
+test_negative_rejected (tests.test_algorithms.OddSumTests.test_negative_rejected) ... ok
+test_non_integer_rejected (tests.test_algorithms.OddSumTests.test_non_integer_rejected) ... ok
+test_odd_boundary_is_included (tests.test_algorithms.OddSumTests.test_odd_boundary_is_included) ... ok
+test_zero_and_one (tests.test_algorithms.OddSumTests.test_zero_and_one) ... ok
+test_empty_and_non_vowels (tests.test_algorithms.VowelTests.test_empty_and_non_vowels) ... ok
+test_english (tests.test_algorithms.VowelTests.test_english) ... ok
+test_non_string_rejected (tests.test_algorithms.VowelTests.test_non_string_rejected) ... ok
+test_repeated_vowels (tests.test_algorithms.VowelTests.test_repeated_vowels) ... ok
+test_russian (tests.test_algorithms.VowelTests.test_russian) ... ok
+test_uppercase_and_yo (tests.test_algorithms.VowelTests.test_uppercase_and_yo) ... ok
+test_commands (tests.test_cli.CliTests.test_commands) ... ok
+test_demo (tests.test_cli.CliTests.test_demo) ... ok
+test_invalid_input (tests.test_cli.CliTests.test_invalid_input) ... ok
+test_launch_from_another_directory (tests.test_cli.CliTests.test_launch_from_another_directory) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.998s
+
+OK

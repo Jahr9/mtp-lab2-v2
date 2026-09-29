@@ -1,0 +1,5 @@
+Sum of odd numbers through 10: 25
+GCD by divisors (48, 18): 6
+GCD by Euclid (48, 18): 6
+Vowels in 'Hello, Python!': 3
+Vowels in 'Привет, мир!': 3
